@@ -14,6 +14,9 @@ public class inventoryManager : MonoBehaviour
 
     public Image[] weaponsSprites;
 
+
+    public InventorySlot[] weaponsSlots;
+
     void Awake()
     {
         if(isntance != null && isntance != this)
@@ -36,6 +39,10 @@ public class inventoryManager : MonoBehaviour
 
                 weaponsNames[i].text = item.itemName;
                 weaponsSprites[i].sprite = item.itemSprite;
+
+
+                weaponsSlots[i].slotItem = item;
+                weaponsSlots[i]. slotNumber = i;
 
                 return;
             }

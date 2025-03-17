@@ -1141,7 +1141,7 @@ GameObject:
   - component: {fileID: 813953344}
   - component: {fileID: 813953343}
   m_Layer: 5
-  m_Name: Button (Legacy) (1)
+  m_Name: DeleteButton (Legacy) (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1162,9 +1162,9 @@ RectTransform:
   - {fileID: 1106448075}
   m_Father: {fileID: 1011306884}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 450, y: -75}
   m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &813953343
@@ -1773,7 +1773,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1384729700
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2551,7 +2551,7 @@ GameObject:
   - component: {fileID: 1704695463}
   - component: {fileID: 1704695462}
   m_Layer: 5
-  m_Name: Button (Legacy)
+  m_Name: CloseButton (Legacy)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2572,9 +2572,9 @@ RectTransform:
   - {fileID: 1682129284}
   m_Father: {fileID: 1011306884}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 150, y: -75}
   m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1704695462
@@ -2937,6 +2937,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Slot
       objectReference: {fileID: 0}
+    - target: {fileID: 1526862814823206913, guid: f9966194ff4ae184abcf1eda83a9c361, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3491380740580495360, guid: f9966194ff4ae184abcf1eda83a9c361, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3017,6 +3021,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4441154696040101720, guid: f9966194ff4ae184abcf1eda83a9c361, type: 3}
+      propertyPath: closeButton
+      value: 
+      objectReference: {fileID: 1704695462}
+    - target: {fileID: 4441154696040101720, guid: f9966194ff4ae184abcf1eda83a9c361, type: 3}
+      propertyPath: deleteButton
+      value: 
+      objectReference: {fileID: 813953343}
+    - target: {fileID: 4441154696040101720, guid: f9966194ff4ae184abcf1eda83a9c361, type: 3}
+      propertyPath: inspectionName
+      value: 
+      objectReference: {fileID: 1842565531}
+    - target: {fileID: 4441154696040101720, guid: f9966194ff4ae184abcf1eda83a9c361, type: 3}
+      propertyPath: inspectionImage
+      value: 
+      objectReference: {fileID: 1422181427}
+    - target: {fileID: 4441154696040101720, guid: f9966194ff4ae184abcf1eda83a9c361, type: 3}
+      propertyPath: inspectionWindow
+      value: 
+      objectReference: {fileID: 1384729699}
+    - target: {fileID: 4441154696040101720, guid: f9966194ff4ae184abcf1eda83a9c361, type: 3}
+      propertyPath: inspectionDescription
+      value: 
+      objectReference: {fileID: 325211441}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
