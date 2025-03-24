@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c399f45a31d7124d876a14a1815cec3, type: 3}
   m_Name: Espada de madera
   m_EditorClassIdentifier: 
-  itemName: Arco curvo
-  itemDescription: Un arco muy curvo
-  itemPrice: 7
-  itemSprite: {fileID: 21300000, guid: a7509656986904778b9b80babc278b98, type: 3}
+  itemName: Espada de madera
+  itemDescription: Un palo pegado con cinta a otro
+  itemPrice: 0
+  itemSprite: {fileID: 21300000, guid: 50d3cd2f336704fcf9cf5b293c10ba9c, type: 3}
