@@ -15,7 +15,7 @@ public class inventoryManager : MonoBehaviour
     public Image[] weaponsSprites;
 
 
-    public InventorySlot[] weaponsSlots;
+    public InventorySlot[] weaponsSlots; //no examen
 
     void Awake()
     {
@@ -36,13 +36,12 @@ public class inventoryManager : MonoBehaviour
             if(weapons[i] == null)
             {
                 weapons[i] = item;
-
                 weaponsNames[i].text = item.itemName;
                 weaponsSprites[i].sprite = item.itemSprite;
 
 
-                weaponsSlots[i].slotItem = item;
-                weaponsSlots[i]. slotNumber = i;
+                weaponsSlots[i].slotItem = item; //esto no
+                weaponsSlots[i]. slotNumber = i; //esto no
 
                 return;
             }
