@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class MovimientoPJ : MonoBehaviour
 {
+
+
+
+    private Rigidbody2D rbody;
     // Start is called before the first frame update
     void Start()
     {

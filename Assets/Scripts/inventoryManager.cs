@@ -5,18 +5,11 @@ using UnityEngine.UI;
 
 public class inventoryManager : MonoBehaviour
 {
-
-
     public static inventoryManager isntance;
-
     public ScriptableItem[] weapons;
     public Text[] weaponsNames;
-
     public Image[] weaponsSprites;
-
-
     public InventorySlot[] weaponsSlots; //no examen
-
     void Awake()
     {
         if(isntance != null && isntance != this)
@@ -28,7 +21,6 @@ public class inventoryManager : MonoBehaviour
             isntance = this;
         }
     }
-
     public void AddItem(ScriptableItem item)
     {
         for (int i = 0; i < weapons.Length; i++)
@@ -38,17 +30,11 @@ public class inventoryManager : MonoBehaviour
                 weapons[i] = item;
                 weaponsNames[i].text = item.itemName;
                 weaponsSprites[i].sprite = item.itemSprite;
-
-
                 weaponsSlots[i].slotItem = item; //esto no
                 weaponsSlots[i]. slotNumber = i; //esto no
-
                 return;
             }
         }
     }
-    
-
-   
 
 }
